@@ -1,6 +1,6 @@
 class CartaPoker extends Carta {
-    // Ponemos una jerarquia de que palo gana a cual en el caso de que tenga el mismo valor.
-    String[] jerarquia = {"treboles", "diamantes", "corazones", "picas"};
+    // Ponemos una jerarquia de que palo gana a cual en el caso de que tenga el mismo valor;
+    String[] jerarquia = {"TREBOLES", "DIAMANTES", "CORAZONES", "PICAS"};
 
     public CartaPoker(int valor, String palo) {
         super(valor, palo);

@@ -1,6 +1,6 @@
 class CartaEspanola extends Carta {
     // Ponemos una jerarquia de que palo gana a cual en el caso de que tenga el mismo valor.
-    String[] jerarquia = {"oros", "copas", "espadas", "bastos"};
+    String[] jerarquia = {"OROS", "COPAS", "ESPADAS", "BASTOS"};
 
     public CartaEspanola(int valor, String palo) {
         super(valor, palo);
