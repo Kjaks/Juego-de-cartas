@@ -1,11 +1,9 @@
 public class Baraja {
-    private int tipo;
     Carta[] mazo;
 
     public Baraja(int tipo){
-        this.tipo = tipo;
-
-            if(this.tipo == 1){
+        switch (tipo){
+            case 1:
             mazo = new Carta[52];
 
             for(int i = 0, j = 0; i < 13;i++,j++){
@@ -23,6 +21,14 @@ public class Baraja {
             for(int i = 39,j = 0 ;i < 52; i++,j++){
                 mazo[i] = new Carta(j, "treboles");
             }
+
+            break;
+            case 2:
+
+            break;
+
+            case 3:
+            break;
         }
     }
 

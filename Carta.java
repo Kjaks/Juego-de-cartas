@@ -22,4 +22,29 @@ public class Carta{
     public void setPalo(String palo){
         this.palo = palo;
     }
+
+    public boolean equals(Carta carta){
+        if(this.palo.equals(carta.getPalo()) && this.valor == carta.getValor()){
+            return true;
+        }
+        else return false;        
+    }
+
+    public Carta clone(){
+        return new Carta(this.valor, this.palo);
+    }
+
+    public Boolean compararNumero(Carta carta){
+        if(carta.getValor() == this.valor){
+            return true;
+        } 
+        else return false;
+    }
+
+    public Boolean compararPalo(Carta carta){
+        if(this.palo.equals(carta.getPalo())){
+            return true;
+        } 
+        else return false;
+    }
 }
