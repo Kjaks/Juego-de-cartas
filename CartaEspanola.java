@@ -1,20 +1,17 @@
 class CartaEspanola extends Carta {
     // Ponemos una jerarquia de que palo gana a cual en el caso de que tenga el mismo valor.
-    String[] jerarquia = {"OROS", "COPAS", "ESPADAS", "BASTOS"};
+    private String[] jerarquia = {"OROS", "COPAS", "ESPADAS", "BASTOS"};
 
     public CartaEspanola(int valor, String palo) {
         super(valor, palo);
     }
-
-    public String toString(){
-        return "Palo: " + this.palo + "\nValor: " + this.valor; 
-    }
-
+    
+    @Override
     public Boolean mayorQue(Carta carta){
         Boolean respuesta = false;
 
-        // Si el valor de nuestra carta es mayor que la del ordenador y es del mismo palo sale verdadero;
-        if(this.valor > carta.getValor() && super.compararPalo(carta)){
+        // Si el valor de nuestra carta es mayor que la del ordenador sale verdadero;
+        if(this.valor > carta.getValor()){
             respuesta = true;
         }
 

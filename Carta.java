@@ -23,6 +23,10 @@ public class Carta{
         this.palo = palo;
     }
 
+    public String toString(){
+        return "Palo: " + this.palo + "\nValor: " + this.valor; 
+    }
+
     public boolean equals(Carta carta){
         if(this.palo.equals(carta.getPalo()) && this.valor == carta.getValor()){
             return true;
@@ -46,5 +50,9 @@ public class Carta{
             return true;
         } 
         else return false;
+    }
+
+    public Boolean mayorQue(Carta carta){
+        return true;
     }
 }
